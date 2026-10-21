@@ -1,0 +1,58 @@
+name: my_desktop_app
+description: "Diet King POS — Point of Sale & ERP System"
+publish_to: 'none'
+
+version: 4.2.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  # State management — feature-scoped Cubits
+  flutter_bloc: ^9.1.1
+  # Value equality for Cubit states
+  equatable: ^2.0.7
+  # IBM Plex Sans via Google Fonts
+  google_fonts: ^6.2.1
+  pdf: any
+  printing: 5.14.3
+  supabase_flutter: ^2.18.0
+  # Local SQLite storage (offline-first)
+  sqflite_common_ffi: ^2.3.4+4
+  sqlite3_flutter_libs: ^0.5.27
+  path: ^1.9.0
+  path_provider: ^2.1.5
+  crypto: ^3.0.7
+  intl: ^0.20.2
+  # Excel read/write — استيراد الأصناف والجرد
+  excel: ^4.0.3
+  # File picker — فتح ملفات Excel
+  file_picker: ^8.3.7
+  mocktail: ^1.0.5
+  window_manager: ^0.5.2
+  uuid: ^4.6.0
+  connectivity_plus: ^7.3.2
+  flutter_launcher_icons: ^0.14.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+flutter_launcher_icons:
+  windows:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icon/
+    - assets/sounds/
